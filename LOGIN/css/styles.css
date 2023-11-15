@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* selecctores
+class .
+id #
+etiqueta etiqueta*/
+
+header{
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
