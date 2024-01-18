@@ -1,0 +1,67 @@
+* {
+    /*reseteador siempre*/
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 80%;
+    margin: auto;
+    /*centrado*/
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+    line-height: 150px;
+}
+
+.contenedorfluido {
+    display: flex;
+    /*propiedad que se le da a la caja padre*/
+    /* flex-direction: row;
+    flex-wrap: wrap; ocupa el espacio y hace salto de linea */
+    justify-content: space-evenly;
+    /*distribuir información*/
+    align-items: center;
+    flex-flow: row wrap;
+    background-color: azure;
+    border: 3px solid red;
+    min-height: 100vh;
+}
+
+.caja {
+    background-color: aqua;
+    border: 2px solid blue;
+    width: 150px;
+    height: 150px;
+}
+
+.c1 {
+    background-color: blueviolet;
+    order: 6;
+}
+
+.c2 {
+    background-color: pink;
+    order: 5;
+}
+
+.c3 {
+    background-color: aquamarine;
+    order: 4;
+}
+
+.c4 {
+    background-color: black;
+    color: white;
+    order: 3; 
+}
+
+.c5 {
+    background-color: orangered;
+    order: 2;
+}
+
+.c6 {
+    background-color: yellow;
+    order: 1;
+}
