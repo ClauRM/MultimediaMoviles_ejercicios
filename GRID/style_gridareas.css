@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: lightblue;
+    width: 80%;
+    margin: auto;
+    /*para centrar contenedir*/
+}
+
+.contendedorGrid {
+    display: grid;
+    /* grid-template-columns: 60% auto;
+    grid-template-rows: auto auto auto auto; */
+
+    grid-template-areas: 'header header'
+        'navbar navbar'
+        'main aside'
+        'footer footer';
+
+    background-color: antiquewhite;
+    border: 2px solid pink;
+    /* height: 100vh; para que ocupe el 100% de la pantalla */
+}
+
+.caja {
+    background-color: aquamarine;
+    border: 2px solid blue;
+    /* height: 150px; */
+    /* width: 150px; */
+}
+
+.header {
+    background-color: blue;
+    /* grid-column: 1/3; */
+    /*desde que linea vertical hasta que linea ocupa*/
+    grid-area: header;
+}
+
+.navbar {
+    background-color: pink;
+    /* grid-column: 1/3; */
+    grid-area: navbar;
+}
+
+.main {
+    background-color: orange;
+    /* grid-column: 1/2; */
+    grid-area: main;
+}
+
+.aside {
+    background-color: red;
+    /* grid-column: 2/3; */
+    grid-area: aside;
+}
+
+.footer {
+    background-color: yellowgreen;
+    /* grid-column: 1/3; */
+    grid-area: footer;
+}
