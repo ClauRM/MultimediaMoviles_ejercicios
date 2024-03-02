@@ -5,3 +5,9 @@ CREATE TABLE users(
     nameuser VARCHAR(255) NOT NULL,
     pass VARCHAR(255) NOT NULL
 );
+
+INSERT INTO TABLE users(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nameuser VARCHAR(255) NOT NULL,
+    pass VARCHAR(255) NOT NULL
+);
