@@ -4,8 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= title %></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <style>
+            /* Estilos CSS para el fondo de la página */
+            body {
+                background-image: url('https://img.freepik.com/vector-gratis/diseno-plantilla-papel-tapiz-medica-abstracta_53876-61802.jpg?t=st=1711822329~exp=1711825929~hmac=2b59923ddaf0c4e76242d46fb367ffa5e34a8e92c7d358ae2aefff73f67a49fa&w=1060'); /* Ruta de la imagen fondo */
+                background-size: cover; /* Cubre toda el body */
+                background-repeat: no-repeat; /* No repetir la imagen */
+            }
+        </style>
 </head>
 <body>
-    <h1>Estás en Registro</h1>
+       <!--Formulario de Registro-->
+       <div class="d-flex align-items-center justify-content-center" style="min-height: 100vh;">
+        <div class="form-signin col-8 col-sm-6 col-md-3">
+            <form action="http://localhost:3000/registro" method="post" class="formulario">
+                <h1 class="h3 mb-3 fw-normal">New registrer</h1>
+
+                <div class="form-floating my-3">
+                    <input type="text" class="form-control" id="floatingUser" placeholder="User name" name="newuser">
+                    <label for="floatingUser">User name</label>
+                </div>
+                <div class="form-floating my-3">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="newpass">
+                    <label for="floatingPassword">Password</label>
+                </div>
+                <input value="New Register" class="btn btn-primary w-100 py-2" type="submit">
+                <!-- Volver a HOME -->
+                <p class="text-body-secondary mt-3">
+                    Back to <a href="/" class="text-reset">Home</a>.
+                </p>
+                <p class="text-body-secondary">
+                    Go to <a href="/login" class="text-reset">Login</a>.
+                </p>
+                <p class="mt-5 mb-3 text-body-secondary">&copy; Claudia Rubio 2024</p>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 </html>
