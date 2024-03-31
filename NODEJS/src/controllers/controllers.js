@@ -12,3 +12,4 @@ export const pruebacon = async (req, res) => {
     const [result] = await pool.query('SELECT 2+2 AS RESULTADO'); //si logra conectarse hace la consulta
     res.json(result);
 };
+
